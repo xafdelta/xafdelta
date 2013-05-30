@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aborted" xml:space="preserve">
+    <value>aborted</value>
+  </data>
+  <data name="BuildingPackages" xml:space="preserve">
+    <value>Building packages</value>
+  </data>
+  <data name="BuildingSnapshotForNode" xml:space="preserve">
+    <value>Building snapshot for {0} replication node</value>
+  </data>
+  <data name="CantCreateSnapshotForDisabled" xml:space="preserve">
+    <value>Can't create snapshot for disabled node.</value>
+  </data>
+  <data name="CantDeleteNode" xml:space="preserve">
+    <value>Can't delete current replication node</value>
+  </data>
+  <data name="CollisionDetected" xml:space="preserve">
+    <value>{0} collision detected for package record {1}. Resolved to {2}.</value>
+  </data>
+  <data name="CollisionError" xml:space="preserve">
+    <value>Replication collision {0} error: </value>
+  </data>
+  <data name="ExportAborted" xml:space="preserve">
+    <value>Exporting is aborted.</value>
+  </data>
+  <data name="ExportFinished" xml:space="preserve">
+    <value>Export is finished</value>
+  </data>
+  <data name="ExportingFile" xml:space="preserve">
+    <value>Exporting file {0} ...</value>
+  </data>
+  <data name="FileNameIsEmpty" xml:space="preserve">
+    <value>File name is empty</value>
+  </data>
+  <data name="FilesSelectedForExport" xml:space="preserve">
+    <value>{0} files selected for export</value>
+  </data>
+  <data name="FilesSelectedForImport" xml:space="preserve">
+    <value>{0} files selected for import</value>
+  </data>
+  <data name="Finished" xml:space="preserve">
+    <value>finished</value>
+  </data>
+  <data name="ImportAborted" xml:space="preserve">
+    <value>Importing is aborted.</value>
+  </data>
+  <data name="ImportingFile" xml:space="preserve">
+    <value>Importing file {0} ...</value>
+  </data>
+  <data name="ImportInvalidFileExtension" xml:space="preserve">
+    <value>Invalid file extension for file {0}. File skipped.</value>
+  </data>
+  <data name="ImportPackageExists" xml:space="preserve">
+    <value>Package {0} is already exists in replication storage. File skipped.</value>
+  </data>
+  <data name="ImportTicketExists" xml:space="preserve">
+    <value>Ticket {0} is already exists in replication storage. File skipped.</value>
+  </data>
+  <data name="InvalidPackageData" xml:space="preserve">
+    <value>Invalid package data: </value>
+  </data>
+  <data name="InvalidPackageFileName" xml:space="preserve">
+    <value>Invalid package file name</value>
+  </data>
+  <data name="InvalidPackageId" xml:space="preserve">
+    <value>Invalid package Id for package {0}. Actual {1}, expected {2}</value>
+  </data>
+  <data name="InvalidPackageProp" xml:space="preserve">
+    <value>Invalid {2}: actual {0} expected {1}</value>
+  </data>
+  <data name="LoadingAborted" xml:space="preserve">
+    <value>Loading aborted by user</value>
+  </data>
+  <data name="LoadingIs" xml:space="preserve">
+    <value>Package loading is {0}</value>
+  </data>
+  <data name="LoadingIsFinished" xml:space="preserve">
+    <value>Packages loading is finished</value>
+  </data>
+  <data name="LoadingPackage" xml:space="preserve">
+    <value>Loading package {0}</value>
+  </data>
+  <data name="LoadingStarted" xml:space="preserve">
+    <value>Packages loading started</value>
+  </data>
+  <data name="NodeIdAllNodes" xml:space="preserve">
+    <value>'{0}' is reserved for broadcast packages and shouldn't be used as NodeId</value>
+  </data>
+  <data name="NodeIdInvalidChars" xml:space="preserve">
+    <value>NodeId contains invalid characters: '{0}'</value>
+  </data>
+  <data name="NoObjectsFoundForSnapshot" xml:space="preserve">
+    <value>No source objects found for snapshot. Snapshot is not created.</value>
+  </data>
+  <data name="NotSessionProvider" xml:space="preserve">
+    <value>newObject is not implements ISessionProvider</value>
+  </data>
+  <data name="ObjectsFoundInSnapshot" xml:space="preserve">
+    <value>{0} objects found in snapshot</value>
+  </data>
+  <data name="PackageCreated" xml:space="preserve">
+    <value>Created package {0}</value>
+  </data>
+  <data name="PackageDataIsEmpty" xml:space="preserve">
+    <value>Package data is empty for package {0}.</value>
+  </data>
+  <data name="PackageLoadError" xml:space="preserve">
+    <value>Package loading is failed with error {0}</value>
+  </data>
+  <data name="PackageLoadingCompleted" xml:space="preserve">
+    <value>Package {0} loading is completed successfully</value>
+  </data>
+  <data name="PackageLoadingIsFailed" xml:space="preserve">
+    <value>Package {0} loading is failed</value>
+  </data>
+  <data name="PackageRejected" xml:space="preserve">
+    <value>Package {0} is rejected</value>
+  </data>
+  <data name="PackageSaveFailed" xml:space="preserve">
+    <value>Protocol package saving is failed with error {0}</value>
+  </data>
+  <data name="PackageSavingIs" xml:space="preserve">
+    <value>Protocol packages saving is {0}</value>
+  </data>
+  <data name="PackagesSelectedForLoading" xml:space="preserve">
+    <value>{0} packages selected for loading</value>
+  </data>
+  <data name="SavingSessionData" xml:space="preserve">
+    <value>Saving data for protocol session {0}</value>
+  </data>
+  <data name="SelectedForLoading" xml:space="preserve">
+    <value>{0} packages selected for loading</value>
+  </data>
+  <data name="SenderNodeIsNotFound" xml:space="preserve">
+    <value>Sender node {0} is not found for package {1}. Anonymous package loading are not allowed.</value>
+  </data>
+  <data name="SessionAlreadyLoaded" xml:space="preserve">
+    <value>Package session {0} was already loaded</value>
+  </data>
+  <data name="SessionDataSaved" xml:space="preserve">
+    <value>Data for protocol session {0} is saved</value>
+  </data>
+  <data name="ShouldSaveTargetNode" xml:space="preserve">
+    <value>You should save target replication node before create snapshot.</value>
+  </data>
+  <data name="SnapshotBuildingIs" xml:space="preserve">
+    <value>Snapshot building is {0}</value>
+  </data>
+  <data name="SnapshotFailed" xml:space="preserve">
+    <value>Snapshot building is failed with error {0}</value>
+  </data>
+  <data name="SnapshotLoadingIs" xml:space="preserve">
+    <value>Snapshot loading is {0}</value>
+  </data>
+  <data name="SnapshotLoadingIsFailed" xml:space="preserve">
+    <value>Snapshot loading is failed with error {0}</value>
+  </data>
+  <data name="SourceObjectsFoundForClass" xml:space="preserve">
+    <value>{0} source objects found for class {1}</value>
+  </data>
+  <data name="TargetObjectExists" xml:space="preserve">
+    <value>Target object already exists in application database</value>
+  </data>
+  <data name="TargetObjectNotFound" xml:space="preserve">
+    <value>Target object is not found in application database</value>
+  </data>
+  <data name="TotalObjectsSnapshoted" xml:space="preserve">
+    <value>Total: {0} objects is snapshoted</value>
+  </data>
+  <data name="Replication" xml:space="preserve">
+    <value>Replication</value>
+  </data>
+  <data name="ImportFinished" xml:space="preserve">
+    <value>Import finished</value>
+  </data>
+  <data name="BuildObjectMaps" xml:space="preserve">
+    <value>Build object maps</value>
+  </data>
+  <data name="CommitChanges" xml:space="preserve">
+    <value>Commiting changes</value>
+  </data>
+  <data name="SnapshotProperty" xml:space="preserve">
+    <value>Snapshot object "{0}" property "{1}"</value>
+  </data>
+  <data name="SnapshotObject" xml:space="preserve">
+    <value>Snapshot object "{0}"</value>
+  </data>
+</root>

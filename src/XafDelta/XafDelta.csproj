@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA8281E0-2003-42B8-8CD0-BBD4017CFD66}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XafDelta</RootNamespace>
+    <AssemblyName>XafDelta</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\XafDelta.snk</AssemblyOriginatorKeyFile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\XafDelta.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v11.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Objects.v11.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v11.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v11.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v11.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v11.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionWorker.cs" />
+    <Compile Include="BaseService.cs" />
+    <Compile Include="Exceptions\CurrentNodeDeletionException.cs" />
+    <Compile Include="Localization\LocalizationStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalizationStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\Localizer.cs" />
+    <Compile Include="Platforms.cs" />
+    <Compile Include="Exceptions\InvalidCharInNodeIdException.cs" />
+    <Compile Include="Exceptions\InvalidReplicationNodeIdException.cs" />
+    <Compile Include="Exceptions\InvalidPackageDataException.cs" />
+    <Compile Include="Messaging\IReplicationMessage.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReadOnlyParameters\ApplicationNameParameter.cs" />
+    <Compile Include="IsLocalAttribute.cs" />
+    <Compile Include="Replication\SnapshotService.cs" />
+    <Compile Include="SelectorAttribute.cs" />
+    <Compile Include="Replication\SnapshotTarget.cs" />
+    <Compile Include="ValueTransform.cs" />
+    <Compile Include="CurrentNodeHolder.cs" />
+    <Compile Include="ReadOnlyParameters\CurrentNodeIdParameter.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="IDataStoreProviderFactory.cs" />
+    <Compile Include="ILoadService.cs" />
+    <Compile Include="IReplicable.cs" />
+    <Compile Include="ISnapshotable.cs" />
+    <Compile Include="Messaging\IObjectReference.cs" />
+    <Compile Include="Messaging\IPackageObjectReference.cs" />
+    <Compile Include="Messaging\PackageLogRecord.cs" />
+    <Compile Include="Messaging\OidMap.cs" />
+    <Compile Include="Messaging\PackService.cs" />
+    <Compile Include="Messaging\Package.cs" />
+    <Compile Include="Messaging\PackageObjectReference.cs" />
+    <Compile Include="Messaging\PackageRecord.cs" />
+    <Compile Include="Messaging\PackageMarker.cs" />
+    <Compile Include="Messaging\ObjectReference.cs" />
+    <Compile Include="Messaging\MessagingService.cs" />
+    <Compile Include="Messaging\PackageSession.cs" />
+    <Compile Include="Messaging\Ticket.cs" />
+    <Compile Include="ModelExtensions.cs" />
+    <Compile Include="Module.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonReplicableAttribute.cs" />
+    <Compile Include="NonSnapshotAttribute.cs" />
+    <Compile Include="Protocol\SessionEvents.cs" />
+    <Compile Include="ReadOnlyParameters\SnapshotNodeParameter.cs" />
+    <Compile Include="RecipientSelectorAttribute.cs" />
+    <Compile Include="NotForProtocolAttribute.cs" />
+    <Compile Include="Protocol\MethodCallParams.cs" />
+    <Compile Include="MethodCallRegistration.cs" />
+    <Compile Include="Protocol\MethodParamValue.cs" />
+    <Compile Include="ReplicationKeyAttribute.cs" />
+    <Compile Include="ReplicationNode.cs" />
+    <Compile Include="Replication\LoadPackageContext.cs" />
+    <Compile Include="Replication\LoadService.cs" />
+    <Compile Include="Replication\ProtocolReplicationService.cs" />
+    <Compile Include="Replication\RecipientsContext.cs" />
+    <Compile Include="Replication\RecipientsContextBase.cs" />
+    <Compile Include="Exceptions\ReplicationCollisionException.cs" />
+    <Compile Include="Exceptions\DisabledTargetNodeException.cs" />
+    <Compile Include="Replication\SnapshotOidMap.cs" />
+    <Compile Include="Replication\SnapshotReplicationService.cs" />
+    <Compile Include="ReadOnlyParameters\SnapshotNodeIdParameter.cs" />
+    <Compile Include="Exceptions\UnsavedTargetNodeException.cs" />
+    <Compile Include="SnapshotSelectorAttribute.cs" />
+    <Compile Include="Storage\StorageService.cs" />
+    <Compile Include="Storage\XafDeltaDataStoreProvider.cs" />
+    <Compile Include="Storage\XpoDataStoreProxy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protocol\ExternalProtocolSession.cs" />
+    <Compile Include="Protocol\ProtocolService.cs" />
+    <Compile Include="Protocol\Collector.cs" />
+    <Compile Include="Protocol\ObjectSpace.cs" />
+    <Compile Include="Protocol\ObjectSpaceProvider.cs" />
+    <Compile Include="Protocol\ProtocolEvent.cs" />
+    <Compile Include="Protocol\SessionData.cs" />
+    <Compile Include="Protocol\TrackedObjectBag.cs" />
+    <Compile Include="Protocol\TrackedObjectData.cs" />
+    <Compile Include="Protocol\ProtocolRecord.cs" />
+    <Compile Include="Protocol\ProtocolSession.cs" />
+    <Compile Include="Updater.cs" />
+    <Compile Include="VcActions.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VcActions.Designer.cs">
+      <DependentUpon>VcActions.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.resx">
+      <DependentUpon>Module.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\XafDelta.snk">
+      <Link>XafDelta.snk</Link>
+    </None>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Localization\XafDelta.ru-RU.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICSharpCode.SharpZipLib.dll" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resources\Delta.ico" />
+    <EmbeddedResource Include="Images\ExportFiles.png" />
+    <EmbeddedResource Include="Images\ExportFiles_32x32.png" />
+    <EmbeddedResource Include="Images\ImportFiles.png" />
+    <EmbeddedResource Include="Images\ImportFiles_32x32.png" />
+    <EmbeddedResource Include="Images\BuildSnapshot.png" />
+    <EmbeddedResource Include="Images\BuildSnapshot_32x32.png" />
+    <EmbeddedResource Include="Images\ProtocolSession.png" />
+    <EmbeddedResource Include="Images\ProtocolSession_32x32.png" />
+    <EmbeddedResource Include="Images\LoadAll.png" />
+    <EmbeddedResource Include="Images\LoadAll_32x32.png" />
+    <EmbeddedResource Include="Images\LoadPackage.png" />
+    <EmbeddedResource Include="Images\LoadPackage_32x32.png" />
+    <EmbeddedResource Include="Images\ReplicaLogRecord.png" />
+    <EmbeddedResource Include="Images\ReplicaLogRecord_32x32.png" />
+    <EmbeddedResource Include="Images\Ticket.png" />
+    <EmbeddedResource Include="Images\Ticket_32x32.png" />
+    <EmbeddedResource Include="Images\BuildPackage.png" />
+    <EmbeddedResource Include="Images\BuildPackage_32x32.png" />
+    <EmbeddedResource Include="Images\XafDelta.png" />
+    <EmbeddedResource Include="Images\XafDelta_32x32.png" />
+    <EmbeddedResource Include="Localization\LocalizationStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizationStrings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VcActions.resx">
+      <DependentUpon>VcActions.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

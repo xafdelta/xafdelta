@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="XafDelta.Web.UploadContainer" Caption="Import">
+      <OwnMembers>
+        <Member Name="UploadedFiles" Caption="Files to import" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="11.1.7.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>

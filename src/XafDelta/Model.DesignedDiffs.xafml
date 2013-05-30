@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.HCategory" ReplicationKeyMember="Name" />
+    <Class Name="XafDelta.ReplicationNode" ReplicationKeyMember="NodeId">
+      <AppearanceRules>
+        <AppearanceRule Id="CurrentReplicationNode" TargetItems="*" BackColor="192, 255, 192" FontColor="Black" Context="ListView" Criteria="[NodeId] = CurrentNodeId()" IsNewNode="True" />
+      </AppearanceRules>
+    </Class>
+  </BOModel>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="11.2.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Package_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="28" ImageName="">
+            <LayoutGroup Id="Package" RelativeSize="85" ImageName="">
+              <LayoutGroup Id="Package_col1" RelativeSize="47" ImageName="">
+                <LayoutItem Id="ApplicationName" RelativeSize="23" ViewItem="ApplicationName" />
+                <LayoutItem Id="SenderNodeId" RelativeSize="17" ViewItem="SenderNodeId" />
+                <LayoutItem Id="RecipientNodeId" RelativeSize="17" ViewItem="RecipientNodeId" />
+                <LayoutItem Id="PackageType" RelativeSize="17" Index="3" ViewItem="PackageType" />
+                <LayoutItem Id="PackageDateTime" RelativeSize="13" Index="4" ViewItem="PackageDateTime" Removed="True" />
+                <LayoutItem Id="PackageId" RelativeSize="13" ViewItem="PackageId" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Package_col2" RelativeSize="48" ImageName="">
+                <LayoutItem Id="UserName" RelativeSize="23" ViewItem="UserName" />
+                <LayoutItem Id="LoadedDateTime" RelativeSize="15" Index="2" ViewItem="LoadedDateTime" Removed="True" />
+                <LayoutItem Id="LocalState" RelativeSize="58" Index="2" ViewItem="LocalState" />
+                <LayoutItem Id="ExternalState" RelativeSize="17" Index="3" ViewItem="ExternalState" Removed="True" />
+                <LayoutItem Id="FileName" RelativeSize="17" ViewItem="FileName" Removed="True" />
+                <LayoutItem Id="RecipientAddress" RelativeSize="13" ViewItem="RecipientAddress" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutItem Id="FileName" ViewItem="FileName" Index="1" RelativeSize="15" IsNewNode="True" />
+            <LayoutGroup Id="XPObject" RelativeSize="36" ImageName="" Direction="Horizontal" Caption="Oid" Removed="True">
+              <LayoutItem Id="Oid" ViewItem="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" Index="1" RelativeSize="71">
+            <LayoutGroup Id="PackageTickets" Index="0" RelativeSize="100" ImageName="Ticket">
+              <LayoutItem Id="PackageTickets" RelativeSize="100" ViewItem="PackageTickets" />
+            </LayoutGroup>
+            <LayoutGroup Id="LogRecords" Index="1" RelativeSize="100" ImageName="">
+              <LayoutItem Id="LogRecords" RelativeSize="100" ViewItem="LogRecords" />
+            </LayoutGroup>
+            <LayoutGroup Id="PackageData" Removed="True" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Package_ListView">
+      <Columns>
+        <ColumnInfo Id="ExternalState" Index="-1" />
+        <ColumnInfo Id="IsBroadcast" Index="-1" />
+        <ColumnInfo Id="IsInput" Index="-1" />
+        <ColumnInfo Id="IsOutput" Index="-1" />
+        <ColumnInfo Id="LoadedDateTime" Index="-1" />
+        <ColumnInfo Id="Oid" Index="-1" />
+        <ColumnInfo Id="PackageDateTime" Index="-1" />
+        <ColumnInfo Id="PackageId" Index="-1" />
+        <ColumnInfo Id="RecipientAddress" Index="-1" />
+        <ColumnInfo Id="UserName" Index="-1" />
+      </Columns>
+    </ListView>
+    <ListView Id="Package_PackageTickets_ListView">
+      <Columns>
+        <ColumnInfo Id="Comments" Index="-1" />
+        <ColumnInfo Id="Oid" Index="-1" />
+        <ColumnInfo Id="Package" Index="-1" />
+        <ColumnInfo Id="ProcessingDateTime" Index="-1" />
+        <ColumnInfo Id="RecipientAddress" Index="-1" />
+        <ColumnInfo Id="TicketDateTime" Index="-1" />
+        <ColumnInfo Id="UserName" Index="-1" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Ticket_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="17" ImageName="">
+            <LayoutGroup Id="Ticket" RelativeSize="100" ImageName="">
+              <LayoutGroup Id="Ticket_col1" RelativeSize="47" ImageName="">
+                <LayoutItem Id="TicketNodeId" RelativeSize="36" ViewItem="TicketNodeId" />
+                <LayoutItem Id="PackageEventType" RelativeSize="27" ViewItem="PackageEventType" />
+                <LayoutItem Id="TicketDateTime" RelativeSize="17" ViewItem="TicketDateTime" Removed="True" />
+                <LayoutItem Id="UserName" RelativeSize="21" ViewItem="UserName" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Ticket_col2" RelativeSize="48" ImageName="">
+                <LayoutItem Id="UserName" ViewItem="UserName" Index="1" RelativeSize="27" IsNewNode="True" />
+                <LayoutItem Id="FileName" RelativeSize="36" Index="2" ViewItem="FileName" />
+                <LayoutItem Id="ProcessingDateTime" RelativeSize="23" ViewItem="ProcessingDateTime" Removed="True" />
+                <LayoutItem Id="RecipientAddress" RelativeSize="41" ViewItem="RecipientAddress" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Direction="Horizontal" RelativeSize="76" Caption="Oid" ImageName="" Removed="True">
+              <LayoutItem Id="Oid" ViewItem="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="82" ImageName="">
+            <LayoutItem Id="Comments" RelativeSize="100" ViewItem="Comments" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
